@@ -27,6 +27,7 @@ ts-init
 ## Project structure
 
 * `src/` - your source files, must contain `index.ts` file.
+* `test/` - your test files
 * `es/` - ES6 build using ES modules
 * `lib/` - ES5 build using CommonJS (npm) modules. This directory contains `*.d.ts` declaration files too.
 
