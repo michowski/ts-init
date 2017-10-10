@@ -1,6 +1,6 @@
 # ts init
 
-Minimalist TypeScript packages initializer - like `npm init`, but for TS.
+Minimalist TypeScript package initializer - like `npm init`, but for TS.
 
 Install globally:
 ```sh
@@ -16,8 +16,19 @@ ts-init
 **What does it actually do?** Well, not a lot! It will:
 
 1. Install dev dependencies: [typescript](https://github.com/Microsoft/TypeScript), [ts-node](https://www.npmjs.com/package/ts-node) and [rimraf](https://github.com/isaacs/rimraf) (for cross-platform `rm -rf`).
-2. Create scripts to generate `es` (ES6) and `lib` (CommonJS ES5 + `*.d.ts` declaration files) builds and a script to run your project with `ts-node`. Those build files will be also properly declared in your `package.json` and added to `.gitignore`.
+2. Create npm scripts to build your project with TS compiler and run it with `ts-node`. Build files will be also properly declared in your `package.json` and added to `.gitignore`.
 3. Create a minimalist `tsconfig.json` file with sane defaults: ES6 with the following flags set to true: `alwaysStrict`, `strictNullChecks`, `noImplicitAny`.
+
+## Scripts
+
+* `npm run build` - build your project
+* `npm run ts` - run your project with `ts-node`
+
+## Project structure
+
+* `src/` - your source files, must contain `index.ts` file.
+* `es/` - ES6 build using ES modules
+* `lib/` - ES5 build using CommonJS (npm) modules. This directory contains `*.d.ts` declaration files too.
 
 ## Motivation
 
