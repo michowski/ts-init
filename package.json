@@ -1,0 +1,38 @@
+{
+  "name": "ts-init",
+  "version": "1.0.0",
+  "description": "Minimalist TypeScript packages initializer - like `npm init`, but for TS",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "bin": "index.js",
+  "scripts": {
+    "lint": "eslint index.js",
+    "prepublishOnly": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goldenlynx/ts-init.git"
+  },
+  "keywords": [
+    "typescript",
+    "ts",
+    "init",
+    "initializer",
+    "npm",
+    "npm init",
+    "generator",
+    "project",
+    "library"
+  ],
+  "author": "Arkadiusz Michowski <arkadiusz@michowski.com> (https://github.com/michowski)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goldenlynx/ts-init/issues"
+  },
+  "homepage": "https://github.com/goldenlynx/ts-init#readme",
+  "devDependencies": {
+    "eslint": "^4.8.0"
+  }
+}
