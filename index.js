@@ -24,8 +24,13 @@ function main() {
 
   console.log('1. Installing typescript, ts-node, rimraf...')
   exec('npm i -D typescript ts-node rimraf', (err, stdout, stderr) => {
-    if (err || stderr) {
+    if (stderr) {
+      console.error(stderr)
+    }
+
+    if (err) {
       console.error('Could not install typescript!')
+      console.error(err)
 
       process.exit()
     }
