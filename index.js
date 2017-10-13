@@ -29,7 +29,6 @@ function main() {
     }
 
     if (err) {
-      console.error('Could not install typescript!')
       console.error(err)
 
       process.exit()
