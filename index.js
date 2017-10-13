@@ -59,7 +59,7 @@ function modifyPackage() {
     'build:es': 'rimraf es && tsc --target es6 --outDir es --module es6',
     build: 'npm run build:commonjs && npm run build:es',
     ts: 'ts-node src/',
-    prepublishOnly: 'npm run compile',
+    prepublishOnly: 'npm run build',
   })
 
   json.files = ['es', 'lib']

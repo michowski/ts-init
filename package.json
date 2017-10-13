@@ -1,6 +1,6 @@
 {
   "name": "ts-init",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Minimalist TypeScript package initializer - like `npm init`, but for TS",
   "main": "index.js",
   "files": [
